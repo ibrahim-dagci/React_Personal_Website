@@ -13,6 +13,11 @@ const Header = () => {
                 return (
                     <Button
                         title={localize(item.key)}
+                        textColor={
+                            window.location.pathname === item.path
+                                ? "orangered"
+                                : null
+                        }
                         onClick={() => {
                             navigate(item.path);
                         }}
