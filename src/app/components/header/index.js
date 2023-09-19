@@ -9,7 +9,40 @@ const Header = () => {
     const navigate = useNavigate();
     return (
         <div className={classes.container}>
-            {MENU.map((item) => {
+            <div className={classes.topContentContainer}>
+                <button
+                    style={{
+                        margin: 15,
+                        opacity: 0.5,
+                        width: 80,
+                        height: 40,
+                    }}
+                >
+                    button1
+                </button>
+                <button
+                    style={{
+                        margin: 15,
+                        opacity: 0.5,
+                        width: 80,
+                        height: 40,
+                    }}
+                >
+                    button1
+                </button>
+            </div>
+            <div className={classes.botContentContainer}>
+                <button style={{ opacity: 0.5, width: 300, height: 100 }}>
+                    button1
+                </button>
+            </div>
+        </div>
+    );
+};
+export default Header;
+
+/*
+{MENU.map((item) => {
                 return (
                     <Button
                         title={localize(item.key)}
@@ -30,7 +63,18 @@ const Header = () => {
                     switchLocale(activeLocale === "tr" ? "en" : "tr");
                 }}
             />
-        </div>
-    );
-};
-export default Header;
+*/
+
+/*
+<div className={classes.toolbar}>
+                <div>
+                    <img src="./assets/images/logo192.png" />
+                </div>
+                <div>
+                    <img src="./assets/images/logo192.png" />
+                </div>
+                <div>
+                    <img src="./assets/images/logo192.png" />
+                </div>
+            </div>
+            */

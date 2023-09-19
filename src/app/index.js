@@ -14,9 +14,15 @@ import { Header } from "./components";
 const App = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div style={{ height: "100%" }}>
             <Header />
             <Navigation />
+            <div
+                style={{
+                    width: "100%",
+                    height: 1555,
+                }}
+            ></div>
         </div>
     );
 };
