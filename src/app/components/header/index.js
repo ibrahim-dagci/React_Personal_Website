@@ -2,6 +2,7 @@ import useStyle from "./stylesheets";
 import { Button, useNCoreLocalization } from "ncore-web";
 import { MENU } from "../../constants";
 import { useNavigate } from "react-router-dom";
+import Toolbar from "../toolbar";
 
 const Header = () => {
     const classes = useStyle();
@@ -13,7 +14,7 @@ const Header = () => {
                 <button
                     style={{
                         margin: 15,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 80,
                         height: 40,
                     }}
@@ -23,7 +24,7 @@ const Header = () => {
                 <button
                     style={{
                         margin: 15,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 80,
                         height: 40,
                     }}
@@ -32,9 +33,7 @@ const Header = () => {
                 </button>
             </div>
             <div className={classes.botContentContainer}>
-                <button style={{ opacity: 0.5, width: 300, height: 100 }}>
-                    button1
-                </button>
+                <Toolbar></Toolbar>
             </div>
         </div>
     );

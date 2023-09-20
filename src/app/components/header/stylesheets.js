@@ -29,7 +29,7 @@ const useStyle = createUseStyles(
             flexDirection: "column",
             height: 150,
             backgroundColor: "transparent",
-            opacity: 0.5,
+            opacity: 1,
         },
     },
     {

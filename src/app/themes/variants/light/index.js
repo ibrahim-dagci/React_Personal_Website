@@ -30,6 +30,9 @@ const colors = {
     primary: "#b695c0",
     seconder: "#ff8c00",
     orangered: "#ff8c00",
+    matrixblue: "#31C9D4",
+    matrixred: "#FF0000",
+    toolbargray: "#D9D9D9",
 };
 
 export default {
