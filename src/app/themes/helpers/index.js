@@ -3,7 +3,7 @@ export const clickEvent = () => {
         "&:hover": {
             userSelect: "none",
             cursor: "pointer",
-            opacity: 0.7,
+            opacity: 0.75,
         },
         "&:active": {
             transform: "translateY(2px)",

@@ -14,13 +14,7 @@ import { Header, Toolbar } from "./components";
 const App = () => {
     const classes = useStyles();
     return (
-        <div
-            style={{
-                height: "100%",
-                justifyContent: "center",
-                display: "flex",
-            }}
-        >
+        <div className={classes.container}>
             <Header />
             <Navigation />
             <Toolbar />

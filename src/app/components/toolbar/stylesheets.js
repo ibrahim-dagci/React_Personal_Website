@@ -28,6 +28,10 @@ const useStyle = createUseStyles(
             "& img": {
                 width: 40,
                 height: 40,
+                "&:active": {
+                    width: 30,
+                    height: 30,
+                },
             },
         },
         homeContentContainer: {

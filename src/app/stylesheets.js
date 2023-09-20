@@ -26,6 +26,11 @@ const useStyles = createUseStyles(
                 },
             ],
         },
+        container: {
+            height: "100%",
+            justifyContent: "center",
+            display: "flex",
+        },
     },
     {
         name: "Global",

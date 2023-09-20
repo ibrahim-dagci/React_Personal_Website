@@ -7,13 +7,13 @@ const Toolbar = () => {
     return (
         <div className={classes.container}>
             <div className={classes.aboutContentContainer}>
-                <img src="./assets/icons/information.png"></img>
+                <img src="./assets/icons/information.png" />
             </div>
             <div className={classes.homeContentContainer}>
-                <img src="./assets/icons/home.png"></img>
+                <img src="./assets/icons/home.png" />
             </div>
             <div className={classes.contactContentContainer}>
-                <img src="./assets/icons/contact.png"></img>
+                <img src="./assets/icons/contact.png" />
             </div>
         </div>
     );
