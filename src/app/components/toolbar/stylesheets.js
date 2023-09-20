@@ -4,16 +4,17 @@ import { clickEvent } from "../../themes/helpers";
 const useStyle = createUseStyles(
     {
         container: {
-            width: 300,
-            height: 100,
-            margin: 15,
-            opacity: 0.3,
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "row",
+            position: "fixed",
             borderRadius: 50,
             display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "transparent",
+            height: 100,
+            opacity: 0.3,
+            width: 300,
+            bottom: 50,
+            margin: 15,
             "&:hover": {
                 opacity: 1,
                 cursor: "pointer",

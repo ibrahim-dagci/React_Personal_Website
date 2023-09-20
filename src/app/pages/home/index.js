@@ -1,4 +1,4 @@
 const Home = () => {
-    return <div>welcome to home page.</div>;
+    return <div style={{ backgroundColor: "red" }}>welcome to home page.</div>;
 };
 export default Home;

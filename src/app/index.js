@@ -10,19 +10,20 @@ import locales from "./locales";
 import useStyles from "./stylesheets";
 import light from "./themes/variants/light";
 import Navigation from "./navigation";
-import { Header } from "./components";
+import { Header, Toolbar } from "./components";
 const App = () => {
     const classes = useStyles();
     return (
-        <div style={{ height: "100%" }}>
+        <div
+            style={{
+                height: "100%",
+                justifyContent: "center",
+                display: "flex",
+            }}
+        >
             <Header />
             <Navigation />
-            <div
-                style={{
-                    width: "100%",
-                    height: 1555,
-                }}
-            ></div>
+            <Toolbar />
         </div>
     );
 };
