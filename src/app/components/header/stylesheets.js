@@ -3,33 +3,22 @@ import { createUseStyles } from "react-jss";
 const useStyle = createUseStyles(
     {
         container: {
+            backgroundColor: "transparent",
             flexDirection: "column",
-            justifyContent: "space-between",
             position: "fixed",
             display: "flex",
-            height: "100%",
             width: "100%",
-            backgroundColor: "transparent",
+            height: 60,
             top: 0,
         },
 
         topContentContainer: {
-            display: "flex",
-            width: "100%",
-            height: 60,
+            justifyContent: "space-between",
             backgroundColor: "transparent",
             flexDirection: "row",
-            justifyContent: "space-between",
-        },
-
-        botContentContainer: {
-            width: "100%",
             display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            height: 150,
-            backgroundColor: "transparent",
-            opacity: 1,
+            height: "100%",
+            width: "100%",
         },
     },
     {

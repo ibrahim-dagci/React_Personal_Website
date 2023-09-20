@@ -32,9 +32,6 @@ const Header = () => {
                     button1
                 </button>
             </div>
-            <div className={classes.botContentContainer}>
-                <Toolbar></Toolbar>
-            </div>
         </div>
     );
 };
