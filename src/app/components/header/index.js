@@ -3,6 +3,7 @@ import { Button, useNCoreLocalization } from "ncore-web";
 import { MENU } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import Toolbar from "../toolbar";
+import { Switcher } from "../../components";
 
 const Header = () => {
     const classes = useStyle();
@@ -11,26 +12,20 @@ const Header = () => {
     return (
         <div className={classes.container}>
             <div className={classes.topContentContainer}>
-                <button
-                    style={{
-                        margin: 15,
-                        opacity: 1,
-                        width: 80,
-                        height: 40,
+                <Switcher
+                    leftPath={"./assets/icons/moon.png"}
+                    rightPath={"./assets/icons/sun.png"}
+                    onClick={() => {
+                        console.log("localize switched");
                     }}
-                >
-                    button1
-                </button>
-                <button
-                    style={{
-                        margin: 15,
-                        opacity: 1,
-                        width: 80,
-                        height: 40,
+                />
+                <Switcher
+                    leftPath={"./assets/icons/moon.png"}
+                    rightPath={"./assets/icons/sun.png"}
+                    onClick={() => {
+                        console.log("theme switched");
                     }}
-                >
-                    button1
-                </button>
+                />
             </div>
         </div>
     );

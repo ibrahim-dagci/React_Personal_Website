@@ -7,7 +7,7 @@ export const clickEvent = () => {
         },
         "&:active": {
             transform: "translateY(2px)",
-            transition: "transform0.1s",
+            transition: "transform 0.1s",
             userSelect: "none",
         },
     };

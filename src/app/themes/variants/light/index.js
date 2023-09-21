@@ -33,6 +33,8 @@ const colors = {
     matrixblue: "#31C9D4",
     matrixred: "#FF0000",
     toolbargray: "#D9D9D9",
+    matrixbluelight: "#A5D6DC",
+    matrixredlight: "#C86060",
 };
 
 export default {
