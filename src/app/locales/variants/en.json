@@ -2,9 +2,7 @@
     "code": "en",
     "isRTL": false,
     "translations": {
-        "test": "hello",
         "home": "Home",
-        "about": "About Us",
-        "contact": "Contact"
+        "more": "More"
     }
 }

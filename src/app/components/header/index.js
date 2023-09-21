@@ -13,10 +13,10 @@ const Header = () => {
         <div className={classes.container}>
             <div className={classes.topContentContainer}>
                 <Switcher
-                    leftPath={"./assets/icons/moon.png"}
-                    rightPath={"./assets/icons/sun.png"}
+                    leftPath={"./assets/icons/en.png"}
+                    rightPath={"./assets/icons/tr.png"}
                     onClick={() => {
-                        console.log("localize switched");
+                        switchLocale(activeLocale === "tr" ? "en" : "tr");
                     }}
                 />
                 <Switcher
@@ -51,21 +51,7 @@ export default Header;
             <Button
                 title={activeLocale}
                 onClick={() => {
-                    switchLocale(activeLocale === "tr" ? "en" : "tr");
+                    
                 }}
             />
 */
-
-/*
-<div className={classes.toolbar}>
-                <div>
-                    <img src="./assets/images/logo192.png" />
-                </div>
-                <div>
-                    <img src="./assets/images/logo192.png" />
-                </div>
-                <div>
-                    <img src="./assets/images/logo192.png" />
-                </div>
-            </div>
-            */

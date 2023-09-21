@@ -2,9 +2,7 @@
     "code": "tr",
     "isRTL": false,
     "translations": {
-        "test": "merhaba",
         "home": "Anasayfa",
-        "about": "Hakkımızda",
-        "contact": "İletişim"
+        "more": "Daha Fazla"
     }
 }

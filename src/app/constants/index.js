@@ -4,11 +4,7 @@ export const MENU = [
         path: "/",
     },
     {
-        key: "about",
-        path: "/about",
-    },
-    {
-        key: "contact",
-        path: "/contact",
+        key: "more",
+        path: "/more",
     },
 ];
