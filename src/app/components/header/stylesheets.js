@@ -8,7 +8,7 @@ const useStyle = createUseStyles(
             position: "fixed",
             display: "flex",
             width: "100%",
-            height: 60,
+            height: "4rem",
             top: 0,
         },
 

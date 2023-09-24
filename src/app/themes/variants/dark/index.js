@@ -41,6 +41,7 @@ const colors = {
     body: "#000000",
     rgb1: "rgb(0,0,0)",
     rgba1: "rgba(0,0,0,0)",
+    message: "#cfcfcf",
 };
 
 export default {

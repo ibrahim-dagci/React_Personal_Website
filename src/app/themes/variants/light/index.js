@@ -40,6 +40,7 @@ const colors = {
     imacpot: "#292929",
     body: "#FFFFFF",
     rgb1: "rgb(255,255,255)",
+    message: "gray",
 };
 
 export default {
