@@ -30,6 +30,7 @@ const useStyles = createUseStyles(
             height: "100%",
             justifyContent: "center",
             display: "flex",
+            fontFamily: "inter-semibold",
         },
     },
     {

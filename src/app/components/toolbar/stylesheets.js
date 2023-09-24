@@ -13,7 +13,7 @@ const useStyle = createUseStyles(
             height: 100,
             opacity: 0.3,
             width: 300,
-            bottom: 50,
+            bottom: 5,
             margin: 15,
             "&:hover": {
                 opacity: 1,
