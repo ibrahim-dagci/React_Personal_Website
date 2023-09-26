@@ -5,6 +5,7 @@ const useStyles = createUseStyles(
         container: {
             backgroundColor: ({ color }) => color.body,
             width: "100%",
+            height: "100vh",
         },
         iMacContainer: {
             justifyContent: "center",
@@ -62,13 +63,13 @@ const useStyles = createUseStyles(
             position: "absolute",
             width: "100%",
             height: "100%",
-            backgroundColor: ({ color }) => color.body,
+            backgroundColor: ({ color }) => color.screen,
             top: 0,
             right: 0,
             animation: "$heartRateIn 2.5s linear infinite",
         },
         fadeOutDark: {
-            backgroundClor: ({ color }) => color.body,
+            backgroundClor: ({ color }) => color.screen,
             display: "flex",
             justifyContent: "center",
             position: "absolute",

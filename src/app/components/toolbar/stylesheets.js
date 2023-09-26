@@ -14,7 +14,6 @@ const useStyle = createUseStyles(
             height: "6rem",
             width: "18rem",
             bottom: "1rem",
-            opacity: 0.3,
             "&:hover": {
                 cursor: "pointer",
                 opacity: 1,

@@ -25,6 +25,9 @@ const useStyles = createUseStyles(
                     src: "url('/assets/fonts/Inter-Medium.ttf')",
                 },
             ],
+            html: {
+                userSelect: "none",
+            },
         },
         container: {
             height: "100%",

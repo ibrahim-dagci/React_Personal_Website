@@ -29,6 +29,7 @@ const typography = {
 const colors = {
     matrixbluelight: "#A5D6DC",
     matrixredlight: "#C86060",
+    rgba1: "rgba(0,0,0,0)",
     toolbargray: "#D9D9D9",
     matrixblue: "#31C9D4",
     imacscreen: "#000000",
@@ -38,10 +39,13 @@ const colors = {
     seconder: "#ff8c00",
     primary: "#b695c0",
     imacpot: "#EEEDED",
-    body: "#000000",
     rgb1: "rgb(0,0,0)",
-    rgba1: "rgba(0,0,0,0)",
     message: "#cfcfcf",
+    screen: "#000000",
+    bodyR: "#FFFFFF",
+    body2: "#333333",
+    body1: "#222222",
+    body: "#111111",
 };
 
 export default {

@@ -3,6 +3,14 @@
     "isRTL": false,
     "translations": {
         "home": "Home",
-        "more": "More"
+        "more": "More",
+        "whoami": "Who Am I ?",
+        "whoamiContent": "Hello! As you can understand from the title, my full name is İbrahim Dağcı ;) Currently, I am a third-year student in the Computer Engineering department at Konya Technical University, taking steps towards becoming an active developer. I can say that I am generally an introverted person. I prefer formal environments, but I can also be in casual settings when necessary. For now, I can say I'm a moderately sweet person, and I invite you to scroll down for more :)",
+        "educations": "Educations",
+        "experiences": "Experiences",
+        "department1": "Bachelor of Computer Engineering",
+        "school1": "Konya Technical University / 2021-2023 (continues)",
+        "notdeclared": "Not Declared",
+        "freelance": "I don't turn down requests from my close circle, while trying to bring my crazy and wild ideas to life whenever I find the time :)"
     }
 }

@@ -29,6 +29,7 @@ const typography = {
 const colors = {
     matrixbluelight: "#A5D6DC",
     matrixredlight: "#C86060",
+    rgb1: "rgb(255,255,255)",
     toolbargray: "#D9D9D9",
     matrixblue: "#31C9D4",
     imacscreen: "#FFFFFF",
@@ -38,8 +39,11 @@ const colors = {
     seconder: "#ff8c00",
     primary: "#b695c0",
     imacpot: "#292929",
-    body: "#FFFFFF",
-    rgb1: "rgb(255,255,255)",
+    screen: "#FFFFFF",
+    bodyR: "#000000",
+    body2: "#CCCCCC",
+    body1: "#DDDDDD",
+    body: "#EEEEEE",
     message: "gray",
 };
 
