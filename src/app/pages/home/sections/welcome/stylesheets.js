@@ -14,7 +14,10 @@ const useStyles = createUseStyles(
             paddingRight: 10,
             paddingLeft: 10,
             paddingTop: 40,
-            height: 650,
+            height: "75%",
+            "@media (max-width: 1050px)": {
+                paddingTop: 60,
+            },
         },
         screenContentContainer: {
             justifyContent: "center",

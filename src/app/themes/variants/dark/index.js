@@ -36,7 +36,7 @@ const colors = {
     imacborder: "#FFFFFF",
     matrixred: "#FF0000",
     orangered: "#ff8c00",
-    seconder: "#ff8c00",
+    secondery: "#ff8c00",
     primary: "#b695c0",
     imacpot: "#EEEDED",
     rgb1: "rgb(0,0,0)",

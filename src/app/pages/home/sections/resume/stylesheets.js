@@ -17,7 +17,6 @@ const useStyles = createUseStyles(
                 textAlign: "center",
                 lineHeight: "2rem",
                 marginTop: "2rem",
-                fontSize: 21,
                 width: "60%",
             },
         },
@@ -32,7 +31,7 @@ const useStyles = createUseStyles(
             marginTop: "2rem",
             display: "flex",
             width: "100%",
-            height: 500,
+            height: "30rem",
             "& h2": {
                 backgroundImage: ({ color }) =>
                     `linear-gradient( ${color.primary},${color.primary},${color.bodyR}, ${color.bodyR} )`,
@@ -41,18 +40,23 @@ const useStyles = createUseStyles(
                 marginLeft: "2rem",
                 marginTop: "2rem",
             },
+            "@media (max-width: 870px)": {
+                flexDirection: "column",
+            },
         },
         experience: {
             backgroundColor: ({ color }) => color.body1,
             flexDirection: "row",
             display: "flex",
             flex: 1,
+            gap: "1rem",
         },
         educations: {
             backgroundColor: ({ color }) => color.body2,
             flexDirection: "row",
             display: "flex",
             flex: 1,
+            gap: "1rem",
         },
         educationsContent: {
             alignItems: "center",
@@ -67,13 +71,17 @@ const useStyles = createUseStyles(
                 justifyContent: "center",
                 flexDirection: "column",
                 borderRadius: "0.3rem",
+                paddingBottom: "1rem",
+                paddingTop: "1rem",
                 display: "flex",
-                gap: "0.2rem",
-                height: "20%",
+                gap: "0.5rem",
                 width: "90%",
             },
             "& h3,h5": {
                 marginLeft: "1rem",
+            },
+            "& h3": {
+                color: ({ color }) => color.secondery,
             },
         },
         experienceContent: {
@@ -89,13 +97,17 @@ const useStyles = createUseStyles(
                 justifyContent: "center",
                 flexDirection: "column",
                 borderRadius: "0.3rem",
+                paddingBottom: "1rem",
+                paddingTop: "1rem",
                 display: "flex",
                 gap: "0.2rem",
-                height: "20%",
                 width: "90%",
             },
             "& h3,h5": {
                 marginLeft: "1rem",
+            },
+            "& h3": {
+                color: ({ color }) => color.secondery,
             },
         },
         vertical: {

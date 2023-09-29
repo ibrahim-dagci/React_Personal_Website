@@ -1,5 +1,5 @@
 import { useNCoreTheme } from "ncore-web";
-import { Welcome, Resume } from "./sections";
+import { Welcome, Resume, Interests } from "./sections";
 import useStyles from "./stylesheets";
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
         <div className={classes.container}>
             <Welcome />
             <Resume />
+            <Interests />
         </div>
     );
 };

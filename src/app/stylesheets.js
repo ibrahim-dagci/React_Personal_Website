@@ -27,13 +27,20 @@ const useStyles = createUseStyles(
             ],
             html: {
                 userSelect: "none",
+                "@media (max-width: 800px)": {
+                    fontSize: "95%",
+                },
+                "@media (max-width: 700px)": {
+                    fontSize: "90%",
+                },
             },
         },
         container: {
-            height: "100%",
+            fontFamily: "inter-semibold",
             justifyContent: "center",
             display: "flex",
-            fontFamily: "inter-semibold",
+            height: "100%",
+            width: "100%",
         },
     },
     {
