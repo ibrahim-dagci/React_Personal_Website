@@ -27,6 +27,7 @@ const typography = {
 };
 
 const colors = {
+    bodyRT: "rgba(255,255,255,0.3",
     matrixbluelight: "#A5D6DC",
     matrixredlight: "#C86060",
     rgba1: "rgba(0,0,0,0)",
@@ -37,7 +38,7 @@ const colors = {
     matrixred: "#FF0000",
     orangered: "#ff8c00",
     secondery: "#ff8c00",
-    primary: "#b695c0",
+    primary: "#B457D0",
     imacpot: "#EEEDED",
     rgb1: "rgb(0,0,0)",
     message: "#cfcfcf",

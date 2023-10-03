@@ -5,10 +5,10 @@ const useStyle = createUseStyles(
         container: {
             backgroundColor: ({ color }) => color.toolbargray,
             borderRadius: "1.25rem",
+            userSelect: "none",
             height: "2.5rem",
             margin: "1rem",
             width: "5rem",
-            userSelect: "none",
         },
         switcherLeftContainer: {
             display: ({ displayLeft }) => displayLeft,
@@ -20,7 +20,7 @@ const useStyle = createUseStyles(
                 backgroundColor: ({ color }) => color.matrixbluelight,
                 "& div": {
                     transform: "translateX(100%)",
-                    transition: "transform 0.5s",
+                    transition: "transform 0.1s",
                 },
             },
         },
@@ -47,7 +47,7 @@ const useStyle = createUseStyles(
                 backgroundColor: ({ color }) => color.matrixredlight,
                 "& div": {
                     transform: "none",
-                    transition: "transform 0.5s",
+                    transition: "transform 0.1s",
                 },
             },
         },
