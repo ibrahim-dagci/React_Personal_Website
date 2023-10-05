@@ -5,7 +5,7 @@ const useStyles = createUseStyles(
         container: {
             backgroundColor: ({ color }) => color.body,
             width: "100%",
-            height: 700,
+            height: 800,
         },
         header: {
             display: "flex",
@@ -23,12 +23,15 @@ const useStyles = createUseStyles(
             justifyContent: "center",
             flexDirection: "row",
             alignItems: "center",
-            marginTop: "2rem",
+            marginTop: "3rem",
             display: "flex",
-            gap: "2rem",
+            gap: "2.5rem",
             "& h1": {
                 color: ({ color }) => color.bodyR,
                 fontSize: "3rem",
+            },
+            "@media (max-width: 1150px)": {
+                gap: "2.4rem",
             },
             "@media (max-width: 1100px)": {
                 gap: "5rem",

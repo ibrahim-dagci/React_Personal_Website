@@ -3,20 +3,22 @@ import useStyles from "./stylesheets";
 
 const Small = (props) => {
     const { colors } = useNCoreTheme();
-    const clases = useStyles({ color: colors, scale: props.scale });
+    const clasess = useStyles({ color: colors, scale: props.scale });
     return (
-        <div className={clases.container}>
-            <span className={clases.hoveredContent}>
-                <h2>{props.card.title}</h2>
-                <span>
-                    <p>{props.card.content}</p>
+        <div className={clasess.container}>
+            <div className={clasess.content}>
+                <span className={clasess.back}>
+                    <h2>{props.card.title}</h2>
+                    <span>
+                        <p>{props.card.content}</p>
+                    </span>
+                    <button>daha fazla</button>
                 </span>
-                <button>daha fazla</button>
-            </span>
-            <span className={clases.defaultContent}>
-                <h2>{props.card.title}</h2>
-                <img src={props.card.imgPath} />
-            </span>
+                <span className={clasess.front}>
+                    <h2>{props.card.title}</h2>
+                    <img src={props.card.imgPath} />
+                </span>
+            </div>
         </div>
     );
 };

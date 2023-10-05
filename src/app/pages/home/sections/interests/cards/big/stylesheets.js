@@ -4,28 +4,38 @@ import { clickEvent } from "../../../../../../themes/helpers";
 const useStyles = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.bodyrt,
             scale: ({ scale }) => scale,
             borderRadius: "1.25rem",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "2rem",
+            perspective: 1000,
             height: "24.1rem",
             width: "18.7rem",
             display: "flex",
-            "&:hover $hoveredContent": {
-                display: "flex",
-            },
-            "&:hover $defaultContent": {
-                display: "none",
-            },
-        },
-        hoveredContent: {
-            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            marginTop: "2rem",
+            "&:hover $content": {
+                transform: "rotateY(180deg)",
+                transition: "transform 0.5s",
+            },
+        },
+        content: {
+            transformStyle: "preserve-3d",
+            transition: "transform 1s",
+            position: "relative",
+            height: "100%",
+            width: "100%",
+        },
+        back: {
+            backgroundColor: ({ color }) => color.bodyrt,
+            transform: "rotateY(180deg)",
+            backfaceVisibility: "hidden",
+            justifyContent: "center",
+            borderRadius: "1.25rem",
+            flexDirection: "column",
+            position: "absolute",
+            alignItems: "center",
             padding: "1rem",
-            display: "none",
+            display: "flex",
             height: "100%",
             width: "100%",
             gap: "2rem",
@@ -46,7 +56,11 @@ const useStyles = createUseStyles(
                 ...clickEvent(),
             },
         },
-        defaultContent: {
+        front: {
+            backgroundColor: ({ color }) => color.bodyrt,
+            borderRadius: "1.25rem",
+            position: "absolute",
+            backfaceVisibility: "hidden",
             justifyContent: "center",
             flexDirection: "column",
             alignItems: "center",
@@ -63,6 +77,6 @@ const useStyles = createUseStyles(
             },
         },
     },
-    { name: "Small-Card" }
+    { name: "Big-Card" }
 );
 export default useStyles;

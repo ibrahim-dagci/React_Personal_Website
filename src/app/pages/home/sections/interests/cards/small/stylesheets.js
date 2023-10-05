@@ -31,7 +31,7 @@ const useStyles = createUseStyles(
             display: "none",
             height: "100%",
             width: "100%",
-            gap: "2rem",
+            gap: "1.5rem",
             "& h2": {
                 width: "100%",
                 color: ({ color }) => color.primary,

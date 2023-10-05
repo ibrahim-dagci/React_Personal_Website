@@ -27,6 +27,9 @@ const useStyles = createUseStyles(
             ],
             html: {
                 userSelect: "none",
+                "@media (max-width: 1050px)": {
+                    fontSize: "97%",
+                },
                 "@media (max-width: 800px)": {
                     fontSize: "95%",
                 },
