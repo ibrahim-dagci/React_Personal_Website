@@ -30,6 +30,12 @@ const useStyles = createUseStyles(
                 color: ({ color }) => color.bodyR,
                 fontSize: "3rem",
             },
+            "@media (max-width: 1100px)": {
+                gap: "5rem",
+            },
+            "@media (max-width: 500px)": {
+                gap: "3rem",
+            },
         },
     },
     { name: "Interests-Section" }

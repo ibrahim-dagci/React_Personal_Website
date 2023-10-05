@@ -19,9 +19,6 @@ const useStyles = createUseStyles(
             "&:hover $defaultContent": {
                 display: "none",
             },
-            "@media (max-width: 1100px)": {
-                display: "none",
-            },
         },
         hoveredContent: {
             flexDirection: "column",

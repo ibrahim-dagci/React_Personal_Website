@@ -33,6 +33,9 @@ const useStyles = createUseStyles(
                 "@media (max-width: 700px)": {
                     fontSize: "90%",
                 },
+                "@media (max-width: 500px)": {
+                    fontSize: "75%",
+                },
             },
         },
         container: {

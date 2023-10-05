@@ -1,15 +1,11 @@
 import useStyle from "./stylesheets";
 import { useNCoreTheme, useNCoreLocalization } from "ncore-web";
 import { Switcher } from "../../components";
-import { useEffect } from "react";
 
 const Header = () => {
     const classes = useStyle();
-    const { localize, activeLocale, switchLocale } = useNCoreLocalization();
+    const { activeLocale, switchLocale } = useNCoreLocalization();
     const { switchTheme, activeTheme } = useNCoreTheme();
-    useEffect(() => {
-        console.log("rendered Header");
-    }, []);
     return (
         <div className={classes.container}>
             <div className={classes.topContentContainer}>
@@ -18,7 +14,6 @@ const Header = () => {
                     rightPath={"./assets/icons/tr.png"}
                     onClick={() => {
                         switchLocale(activeLocale === "tr" ? "en" : "tr");
-                        console.log(activeTheme);
                     }}
                 />
                 <Switcher
