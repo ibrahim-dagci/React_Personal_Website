@@ -5,14 +5,9 @@ const useStyles = createUseStyles(
     {
         container: {
             scale: ({ scale }) => scale,
-            borderRadius: "1.25rem",
             perspective: 1000,
             height: "24.1rem",
             width: "18.7rem",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "2rem",
             "&:hover $content": {
                 transform: "rotateY(180deg)",
                 transition: "transform 0.5s",
@@ -26,24 +21,26 @@ const useStyles = createUseStyles(
             width: "100%",
         },
         back: {
-            backgroundColor: ({ color }) => color.bodyrt,
-            transform: "rotateY(180deg)",
+            background: ({ color }) => color.bodyrt,
             backfaceVisibility: "hidden",
+            transform: "rotateY(180deg)",
             justifyContent: "center",
             borderRadius: "1.25rem",
             flexDirection: "column",
             position: "absolute",
             alignItems: "center",
-            padding: "1rem",
             display: "flex",
             height: "100%",
             width: "100%",
-            gap: "2rem",
+            gap: "1.5rem",
             "& h2": {
+                marginLeft: "1.5rem",
                 width: "100%",
                 color: ({ color }) => color.primary,
             },
             "& p": {
+                marginRight: "0.5rem",
+                marginLeft: "1rem",
                 color: "white",
             },
             "& button": {
@@ -57,12 +54,12 @@ const useStyles = createUseStyles(
             },
         },
         front: {
-            backgroundColor: ({ color }) => color.bodyrt,
-            borderRadius: "1.25rem",
-            position: "absolute",
+            background: ({ color }) => color.bodyrt,
             backfaceVisibility: "hidden",
             justifyContent: "center",
+            borderRadius: "1.25rem",
             flexDirection: "column",
+            position: "absolute",
             alignItems: "center",
             display: "flex",
             height: "100%",
@@ -72,6 +69,7 @@ const useStyles = createUseStyles(
                 width: "10rem",
                 height: "10rem",
             },
+
             "& h2": {
                 color: ({ color }) => color.primary,
             },

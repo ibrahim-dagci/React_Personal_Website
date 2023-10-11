@@ -7,17 +7,17 @@ const Small = (props) => {
     return (
         <div className={clasess.container}>
             <div className={clasess.content}>
-                <span className={clasess.back}>
+                <div className={clasess.back}>
                     <h2>{props.card.title}</h2>
                     <span>
                         <p>{props.card.content}</p>
                     </span>
                     <button>daha fazla</button>
-                </span>
-                <span className={clasess.front}>
+                </div>
+                <div className={clasess.front}>
                     <h2>{props.card.title}</h2>
                     <img src={props.card.imgPath} />
-                </span>
+                </div>
             </div>
         </div>
     );
