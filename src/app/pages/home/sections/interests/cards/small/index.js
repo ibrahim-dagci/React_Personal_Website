@@ -3,7 +3,11 @@ import useStyles from "./stylesheets";
 
 const Small = (props) => {
     const { colors } = useNCoreTheme();
-    const clases = useStyles({ color: colors, scale: props.scale });
+    const clases = useStyles({
+        color: colors,
+        scale: props.scale,
+        transition: props.transition,
+    });
     return (
         <div className={clases.container}>
             <span className={clases.hoveredContent}>

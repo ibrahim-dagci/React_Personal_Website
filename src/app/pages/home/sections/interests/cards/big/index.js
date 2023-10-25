@@ -3,7 +3,11 @@ import useStyles from "./stylesheets";
 
 const Small = (props) => {
     const { colors } = useNCoreTheme();
-    const clasess = useStyles({ color: colors, scale: props.scale });
+    const clasess = useStyles({
+        color: colors,
+        scale: props.scale,
+        transition: props.transition,
+    });
     return (
         <div className={clasess.container}>
             <div className={clasess.content}>

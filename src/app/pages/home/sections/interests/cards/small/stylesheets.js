@@ -4,6 +4,7 @@ import { clickEvent } from "../../../../../../themes/helpers";
 const useStyles = createUseStyles(
     {
         container: {
+            transition: ({ transition }) => `transform ${transition}s ease`,
             backgroundColor: ({ color }) => color.bodyrt,
             scale: ({ scale }) => scale,
             borderRadius: "1.25rem",

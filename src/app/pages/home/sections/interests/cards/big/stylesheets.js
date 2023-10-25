@@ -5,6 +5,7 @@ const useStyles = createUseStyles(
     {
         container: {
             scale: ({ scale }) => scale,
+            transition: ({ transition }) => `transform ${transition}s ease`,
             perspective: 1000,
             height: "24.1rem",
             width: "18.7rem",
