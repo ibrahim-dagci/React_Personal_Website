@@ -1,8 +1,9 @@
-import { useNCoreTheme } from "ncore-web";
+import { useNCoreTheme, useNCoreLocalization } from "ncore-web";
 import useStyles from "./stylesheets";
 
 const Small = (props) => {
     const { colors } = useNCoreTheme();
+    const { localize } = useNCoreLocalization();
     const clasess = useStyles({
         color: colors,
         scale: props.scale,
@@ -14,9 +15,9 @@ const Small = (props) => {
                 <div className={clasess.back}>
                     <h2>{props.card.title}</h2>
                     <span>
-                        <p>{props.card.content}</p>
+                        <p>{localize(props.card.content)}</p>
                     </span>
-                    <button>daha fazla</button>
+                    <button>{localize("more")}</button>
                 </div>
                 <div className={clasess.front}>
                     <h2>{props.card.title}</h2>
