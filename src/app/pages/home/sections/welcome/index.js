@@ -2,16 +2,8 @@ import { useNCoreTheme } from "ncore-web";
 import useStyles from "./stylesheets";
 import { useEffect, useState } from "react";
 const Welcome = () => {
-    const [fadeOutStyle, setfadeOutStyle] = useState();
     const { colors, activeTheme } = useNCoreTheme();
     const classes = useStyles({ color: colors });
-    useEffect(() => {
-        if (activeTheme == "light") {
-            setfadeOutStyle(classes.fadeOutDark);
-        } else {
-            setfadeOutStyle(classes.fadeOutLight);
-        }
-    }, [activeTheme]);
     return (
         <div className={classes.container}>
             <div className={classes.iMacContainer}>
@@ -85,7 +77,7 @@ const Welcome = () => {
                                         />
                                     </svg>
                                     <div className={classes.fadeIn}></div>
-                                    <div className={fadeOutStyle}></div>
+                                    <div className={classes.fadeOut}></div>
                                 </div>
                                 <div className={classes.messageContainer}>
                                     <div className={classes.messageContent}>

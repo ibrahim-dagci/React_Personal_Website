@@ -71,7 +71,7 @@ const useStyles = createUseStyles(
             right: 0,
             animation: "$heartRateIn 2.5s linear infinite",
         },
-        fadeOutDark: {
+        fadeOut: {
             backgroundClor: ({ color }) => color.screen,
             display: "flex",
             justifyContent: "center",
@@ -81,29 +81,8 @@ const useStyles = createUseStyles(
             top: 0,
             left: "-120%",
             animation: "$heartRateOut 2.5s linear infinite",
-            background: `rgb(0,0,0)`,
-            background: `-moz-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)`,
-            background: `-webkit-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)`,
-            background: `-o-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)`,
-            background: `-ms-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%)`,
-            background: `linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, rgba(255, 255, 255, 0) 100%)`,
-        },
-        fadeOutLight: {
-            backgroundClor: ({ color }) => color.body,
-            display: "flex",
-            justifyContent: "center",
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            top: 0,
-            left: "-120%",
-            animation: "$heartRateOut 2.5s linear infinite",
-            background: `rgb(255,255,255)`,
-            background: `-moz-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 255) 100%)`,
-            background: `-webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 255) 100%)`,
-            background: `-o-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 255) 100%)`,
-            background: `-ms-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%)`,
-            background: `linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%)`,
+            background: ({ color }) =>
+                `linear-gradient(to right, ${color.rgb1} 0%, ${color.rgb1} 80%, rgba(255, 255, 255, 0) 100%)`,
         },
 
         "@keyframes heartRateIn": {

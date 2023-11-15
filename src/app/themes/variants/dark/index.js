@@ -27,10 +27,10 @@ const typography = {
 };
 
 const colors = {
+    rgba1: "rgba(255, 255, 255, 0)",
     bodyrt: "rgba(255,255,255,0.3",
     matrixbluelight: "#A5D6DC",
     matrixredlight: "#C86060",
-    rgba1: "rgba(0,0,0,0)",
     toolbargray: "#D9D9D9",
     matrixblue: "#31C9D4",
     imacscreen: "#000000",

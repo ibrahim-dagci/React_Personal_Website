@@ -27,6 +27,7 @@ const typography = {
 };
 
 const colors = {
+    rgba1: "rgba(255, 255, 255, 0)",
     matrixbluelight: "#A5D6DC",
     matrixredlight: "#C86060",
     rgb1: "rgb(255,255,255)",
