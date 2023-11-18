@@ -1,46 +1,42 @@
 import { useEffect, useState } from "react";
 import useStyle from "./stylesheets";
-import { useNCoreTheme } from "ncore-web";
 
-const Switcher = (props) => {
+const Switcher = ({
+    leftPath = "null",
+    rightPath = "null",
+    colors = {
+        leftCircle: "gray",
+        leftContainer: "lightgray",
+        righCircle: "gray",
+        rightContainer: "lightgray",
+    },
+    onClick,
+}) => {
     const [isSwitch, setDisplay] = useState(false);
-    const [displayLeft, setDisplayLeft] = useState(null);
-    const [displayRight, setDisplayRight] = useState("none !important");
-    const { colors } = useNCoreTheme();
+    const [transform, setTransform] = useState(0);
+
     useEffect(() => {
         if (isSwitch) {
-            setDisplayLeft("none !important");
-            setDisplayRight(null);
+            setTransform(100);
         } else {
-            setDisplayLeft(null);
-            setDisplayRight("none !important");
+            setTransform(0);
         }
     }, [isSwitch]);
 
-    const switchDisplay = () => {
+    const switchButton = () => {
         setDisplay(isSwitch === false ? true : false);
     };
     const classes = useStyle({
         color: colors,
-        displayLeft: displayLeft,
-        displayRight: displayRight,
+        transform,
+        leftPath,
+        isSwitch: isSwitch,
     });
     return (
-        <div className={classes.container} onClick={props.onClick}>
-            <div
-                className={classes.switcherLeftContainer}
-                onClick={switchDisplay}
-            >
-                <div className={classes.switcherLeft}>
-                    <img src={props.leftPath} />
-                </div>
-            </div>
-            <div
-                className={classes.switcherRightContainer}
-                onClick={switchDisplay}
-            >
-                <div className={classes.switcherRight} onClick={switchDisplay}>
-                    <img src={props.rightPath} />
+        <div className={classes.container} onClick={onClick}>
+            <div className={classes.innerContainer} onClick={switchButton}>
+                <div className={classes.circle}>
+                    <img src={isSwitch === false ? leftPath : rightPath} />
                 </div>
             </div>
         </div>

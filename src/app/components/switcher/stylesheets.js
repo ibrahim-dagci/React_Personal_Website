@@ -3,29 +3,28 @@ import { createUseStyles } from "react-jss";
 const useStyle = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.toolbargray,
+            backgroundColor: "lightgray",
             borderRadius: "1.25rem",
             userSelect: "none",
             height: "2.5rem",
             margin: "1rem",
             width: "5rem",
         },
-        switcherLeftContainer: {
-            display: ({ displayLeft }) => displayLeft,
-            backgroundColor: ({ color }) => color.matrixredlight,
+        innerContainer: {
+            backgroundColor: ({ color, isSwitch, transform }) =>
+                isSwitch === false ? color.leftContainer : color.rightContainer,
             borderRadius: "1.25rem",
-            height: "100%",
-            width: "100%",
-            "&:active": {
-                backgroundColor: ({ color }) => color.matrixbluelight,
-                "& div": {
-                    transform: "translateX(100%)",
-                    transition: "transform 0.1s",
-                },
+            userSelect: "none",
+            height: "2.5rem",
+            width: "5rem",
+            "& div": {
+                transform: ({ transform }) => `translateX(${transform}%)`,
+                transition: "transform 0.3s",
             },
         },
-        switcherLeft: {
-            backgroundColor: ({ color }) => color.matrixred,
+        circle: {
+            backgroundColor: ({ color, isSwitch }) =>
+                isSwitch === false ? color.leftCircle : color.rightCircle,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: "1.25rem",
@@ -35,35 +34,8 @@ const useStyle = createUseStyles(
             "& img": {
                 height: "1.75rem",
                 width: "1.75rem",
-            },
-        },
-        switcherRightContainer: {
-            backgroundColor: ({ color }) => color.matrixbluelight,
-            display: ({ displayRight }) => displayRight,
-            borderRadius: "1.25rem",
-            height: "100%",
-            width: "100%",
-            "&:active": {
-                backgroundColor: ({ color }) => color.matrixredlight,
-                "& div": {
-                    transform: "none",
-                    transition: "transform 0.1s",
-                },
-            },
-        },
-        switcherRight: {
-            backgroundColor: ({ color }) => color.matrixblue,
-            transform: "translateX(100%)",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "1.25rem",
-            display: "flex",
-            height: "2.5rem",
-            width: "2.5rem",
-            right: 0,
-            "& img": {
-                height: "1.75rem",
-                width: "1.75rem",
+                display: ({ leftPath }) =>
+                    leftPath === "null" ? "none" : "block",
             },
         },
     },

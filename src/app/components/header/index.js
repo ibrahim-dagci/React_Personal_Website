@@ -5,7 +5,7 @@ import { Switcher } from "../../components";
 const Header = () => {
     const classes = useStyle();
     const { activeLocale, switchLocale } = useNCoreLocalization();
-    const { switchTheme, activeTheme } = useNCoreTheme();
+    const { switchTheme, activeTheme, colors } = useNCoreTheme();
     return (
         <div className={classes.container}>
             <div className={classes.topContentContainer}>
@@ -15,6 +15,7 @@ const Header = () => {
                     onClick={() => {
                         switchLocale(activeLocale === "tr" ? "en" : "tr");
                     }}
+                    colors={colors}
                 />
                 <Switcher
                     leftPath={"./assets/icons/moon.png"}
@@ -22,6 +23,7 @@ const Header = () => {
                     onClick={() => {
                         switchTheme(activeTheme === "light" ? "dark" : "light");
                     }}
+                    colors={colors}
                 />
             </div>
         </div>

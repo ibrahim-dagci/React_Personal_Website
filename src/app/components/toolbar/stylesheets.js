@@ -40,7 +40,7 @@ const useStyle = createUseStyles(
             ...clickEvent(),
         },
         aboutContentContainer: {
-            backgroundColor: ({ color }) => color.matrixblue,
+            backgroundColor: ({ color }) => color.rightCircle,
             height: "100%",
             flex: 1,
             borderRadius: "3rem 0 0 3rem",
@@ -48,7 +48,7 @@ const useStyle = createUseStyles(
         },
         contactContentContainer: {
             borderRadius: "0 3rem 3rem 0",
-            backgroundColor: ({ color }) => color.matrixred,
+            backgroundColor: ({ color }) => color.leftCircle,
             height: "100%",
             flex: 1,
             ...clickEvent(),
