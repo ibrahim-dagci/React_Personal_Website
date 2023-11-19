@@ -11,7 +11,7 @@ const useStyle = createUseStyles(
             width: "5rem",
         },
         innerContainer: {
-            backgroundColor: ({ color, isSwitch, transform }) =>
+            backgroundColor: ({ color, isSwitch }) =>
                 isSwitch === false ? color.leftContainer : color.rightContainer,
             borderRadius: "1.25rem",
             userSelect: "none",
