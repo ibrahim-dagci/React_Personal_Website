@@ -21,6 +21,7 @@ const contextAPI = () => {
     return (
         <NCoreProvider
             config={{
+                initialThemeKey: "dark",
                 themes,
                 locales,
             }}

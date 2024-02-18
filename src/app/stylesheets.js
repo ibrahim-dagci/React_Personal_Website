@@ -3,6 +3,9 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles(
     {
         "@global": {
+            "*": {
+                transition: "all 0s",
+            },
             "@font-face": [
                 {
                     fontFamily: "inter-regular",

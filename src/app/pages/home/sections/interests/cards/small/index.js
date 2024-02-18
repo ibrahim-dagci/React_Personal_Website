@@ -5,9 +5,13 @@ const Small = (props) => {
     const { colors } = useNCoreTheme();
     const { localize } = useNCoreLocalization();
     const clases = useStyles({
-        color: colors,
-        scale: props.scale,
         transition: props.transition,
+        transform: props.transform,
+        position: props.position,
+        scale: props.scale,
+        right: props.right,
+        left: props.left,
+        color: colors,
     });
     return (
         <div className={clases.container}>

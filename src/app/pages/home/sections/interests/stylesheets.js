@@ -19,11 +19,35 @@ const useStyles = createUseStyles(
                 marginTop: "2rem",
             },
         },
-        cardContainer: {
+        innerContainer: {
             justifyContent: "center",
             flexDirection: "row",
             alignItems: "center",
             marginTop: "3rem",
+            display: "flex",
+            "& h1": {
+                color: ({ color }) => color.bodyR,
+                fontSize: "3rem",
+            },
+            "@media (max-width: 1150px)": {},
+            "@media (max-width: 1100px)": {
+                gap: "5rem",
+            },
+            "@media (max-width: 570px)": {
+                gap: "3rem",
+            },
+            "@media (max-width: 510px)": {
+                gap: "2rem",
+            },
+        },
+        cardContainer: {
+            justifyContent: "center",
+            paddingBottom: "3rem",
+            position: "relative",
+            flexDirection: "row",
+            alignItems: "center",
+            paddingTop: "3rem",
+            overflow: "hidden",
             display: "flex",
             gap: "2.5rem",
             "& h1": {
@@ -31,13 +55,15 @@ const useStyles = createUseStyles(
                 fontSize: "3rem",
             },
             "@media (max-width: 1150px)": {
-                gap: "2.4rem",
+                gap: "2.3rem",
             },
             "@media (max-width: 1100px)": {
                 gap: "5rem",
+                padding: "3rem",
             },
-            "@media (max-width: 500px)": {
+            "@media (max-width: 570px)": {
                 gap: "3rem",
+                padding: "3rem",
             },
         },
     },

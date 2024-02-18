@@ -4,8 +4,10 @@ import { clickEvent } from "../../../../../../themes/helpers";
 const useStyles = createUseStyles(
     {
         container: {
+            transition: ({ transition }) => `${transition}`,
+            transform: ({ transform }) => `${transform}`,
+            position: ({ position }) => `${position}`,
             scale: ({ scale }) => scale,
-            transition: ({ transition }) => `transform ${transition}s ease`,
             perspective: 1000,
             height: "24.1rem",
             width: "18.7rem",

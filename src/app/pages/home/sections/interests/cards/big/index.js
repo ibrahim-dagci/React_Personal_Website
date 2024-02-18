@@ -5,9 +5,11 @@ const Small = (props) => {
     const { colors } = useNCoreTheme();
     const { localize } = useNCoreLocalization();
     const clasess = useStyles({
+        transition: props.transition,
+        transform: props.transform,
+        position: props.position,
         color: colors,
         scale: props.scale,
-        transition: props.transition,
     });
     return (
         <div className={clasess.container}>

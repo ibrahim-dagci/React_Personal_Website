@@ -4,13 +4,16 @@ import { clickEvent } from "../../../../../../themes/helpers";
 const useStyles = createUseStyles(
     {
         container: {
-            transition: ({ transition }) => `transform ${transition}s ease`,
+            transition: ({ transition }) => `${transition}`,
             backgroundColor: ({ color }) => color.bodyrt,
+            transform: ({ transform }) => `${transform}`,
+            position: ({ position }) => `${position}`,
+            right: ({ right }) => `${right}`,
+            left: ({ left }) => `${left}`,
             scale: ({ scale }) => scale,
             borderRadius: "1.25rem",
             justifyContent: "center",
             alignItems: "center",
-            marginTop: "2rem",
             height: "24.1rem",
             width: "18.7rem",
             display: "flex",

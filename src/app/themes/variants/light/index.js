@@ -50,7 +50,7 @@ const colors = {
 };
 
 export default {
-    key: "dark",
+    key: "light",
     typography,
     colors,
 };
