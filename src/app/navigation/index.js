@@ -1,6 +1,9 @@
-import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/home";
 import More from "../pages/more";
+import {
+    Routes, 
+    Route,
+} from "react-router-dom";
 
 const Navigation = () => {
     return (

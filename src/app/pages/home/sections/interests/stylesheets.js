@@ -1,9 +1,13 @@
-import { createUseStyles } from "react-jss";
+import {
+    createUseStyles 
+} from "react-jss";
 
 const useStyles = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.body,
+            backgroundColor: ({
+                color 
+            }) => color.body,
             width: "100%",
             height: 800,
         },
@@ -12,7 +16,9 @@ const useStyles = createUseStyles(
             alignItems: "center",
             justifyContent: "center",
             "& h1": {
-                backgroundImage: ({ color }) =>
+                backgroundImage: ({
+                    color 
+                }) =>
                     `linear-gradient( to right, ${color.primary},${color.primary},${color.bodyR}, ${color.bodyR} )`,
                 WebkitTextFillColor: "transparent",
                 WebkitBackgroundClip: "text",
@@ -26,10 +32,13 @@ const useStyles = createUseStyles(
             marginTop: "3rem",
             display: "flex",
             "& h1": {
-                color: ({ color }) => color.bodyR,
+                color: ({
+                    color 
+                }) => color.bodyR,
                 fontSize: "3rem",
             },
-            "@media (max-width: 1150px)": {},
+            "@media (max-width: 1150px)": {
+            },
             "@media (max-width: 1100px)": {
                 gap: "5rem",
             },
@@ -51,7 +60,9 @@ const useStyles = createUseStyles(
             display: "flex",
             gap: "2.5rem",
             "& h1": {
-                color: ({ color }) => color.bodyR,
+                color: ({
+                    color 
+                }) => color.bodyR,
                 fontSize: "3rem",
             },
             "@media (max-width: 1150px)": {
@@ -67,6 +78,8 @@ const useStyles = createUseStyles(
             },
         },
     },
-    { name: "Interests-Section" }
+    {
+        name: "Interests-Section" 
+    }
 );
 export default useStyles;

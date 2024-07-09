@@ -1,9 +1,16 @@
-import { useNCoreTheme, useNCoreLocalization } from "ncore-web";
 import useStyles from "./stylesheets";
+import {
+    useNCoreLocalization, 
+    useNCoreTheme,
+} from "ncore-web";
 
 const Small = (props) => {
-    const { colors } = useNCoreTheme();
-    const { localize } = useNCoreLocalization();
+    const {
+        colors 
+    } = useNCoreTheme();
+    const {
+        localize 
+    } = useNCoreLocalization();
     const clasess = useStyles({
         transition: props.transition,
         transform: props.transform,

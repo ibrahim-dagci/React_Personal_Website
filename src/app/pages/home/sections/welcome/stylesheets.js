@@ -1,9 +1,13 @@
-import { createUseStyles } from "react-jss";
+import {
+    createUseStyles 
+} from "react-jss";
 
 const useStyles = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.body,
+            backgroundColor: ({
+                color 
+            }) => color.body,
             width: "100%",
             height: "100vh",
         },
@@ -51,7 +55,9 @@ const useStyles = createUseStyles(
             bottom: 15,
         },
         messageContent: {
-            color: ({ color }) => color.message,
+            color: ({
+                color 
+            }) => color.message,
             flexDirection: "column",
             alignItems: "center",
             position: "absolute",
@@ -64,15 +70,19 @@ const useStyles = createUseStyles(
             display: "flex",
             justifyContent: "center",
             position: "absolute",
-            width: "100%",
             height: "100%",
-            backgroundColor: ({ color }) => color.screen,
+            width: "100%",
+            backgroundColor: ({
+                color 
+            }) => color.screen,
             top: 0,
             right: 0,
             animation: "$heartRateIn 2.5s linear infinite",
         },
         fadeOut: {
-            backgroundClor: ({ color }) => color.screen,
+            backgroundClor: ({
+                color 
+            }) => color.screen,
             display: "flex",
             justifyContent: "center",
             position: "absolute",
@@ -81,7 +91,9 @@ const useStyles = createUseStyles(
             top: 0,
             left: "-120%",
             animation: "$heartRateOut 2.5s linear infinite",
-            background: ({ color }) =>
+            background: ({
+                color 
+            }) =>
                 `linear-gradient(to right, ${color.rgb1} 0%, ${color.rgb1} 80%, rgba(255, 255, 255, 0) 100%)`,
         },
 
@@ -109,6 +121,8 @@ const useStyles = createUseStyles(
             },
         },
     },
-    { name: "Welcome" }
+    {
+        name: "Welcome" 
+    }
 );
 export default useStyles;

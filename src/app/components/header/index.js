@@ -1,11 +1,20 @@
 import useStyle from "./stylesheets";
-import { useNCoreTheme, useNCoreLocalization } from "ncore-web";
-import { Switcher } from "../../components";
+import {
+    useNCoreLocalization,
+    useNCoreTheme, 
+} from "ncore-web";
+import {
+    Switcher 
+} from "../../components";
 
 const Header = () => {
     const classes = useStyle();
-    const { activeLocale, switchLocale } = useNCoreLocalization();
-    const { switchTheme, activeTheme, colors } = useNCoreTheme();
+    const {
+        activeLocale, switchLocale 
+    } = useNCoreLocalization();
+    const {
+        switchTheme, activeTheme, colors 
+    } = useNCoreTheme();
     return (
         <div className={classes.container}>
             <div className={classes.topContentContainer}>

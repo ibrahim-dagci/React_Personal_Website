@@ -1,4 +1,6 @@
-import { createUseStyles } from "react-jss";
+import {
+    createUseStyles 
+} from "react-jss";
 
 const useStyle = createUseStyles(
     {
@@ -11,19 +13,25 @@ const useStyle = createUseStyles(
             width: "5rem",
         },
         innerContainer: {
-            backgroundColor: ({ color, isSwitch }) =>
+            backgroundColor: ({
+                color, isSwitch 
+            }) =>
                 isSwitch === false ? color.leftContainer : color.rightContainer,
             borderRadius: "1.25rem",
             userSelect: "none",
             height: "2.5rem",
             width: "5rem",
             "& div": {
-                transform: ({ transform }) => `translateX(${transform}%)`,
+                transform: ({
+                    transform 
+                }) => `translateX(${transform}%)`,
                 transition: "transform 0.3s",
             },
         },
         circle: {
-            backgroundColor: ({ color, isSwitch }) =>
+            backgroundColor: ({
+                color, isSwitch 
+            }) =>
                 isSwitch === false ? color.leftCircle : color.rightCircle,
             justifyContent: "center",
             alignItems: "center",
@@ -34,7 +42,9 @@ const useStyle = createUseStyles(
             "& img": {
                 height: "1.75rem",
                 width: "1.75rem",
-                display: ({ leftPath }) =>
+                display: ({
+                    leftPath 
+                }) =>
                     leftPath === "null" ? "none" : "block",
             },
         },

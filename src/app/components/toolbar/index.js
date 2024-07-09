@@ -1,9 +1,15 @@
 import useStyle from "./stylesheets";
-import { useNCoreTheme } from "ncore-web";
+import {
+    useNCoreTheme 
+} from "ncore-web";
 
 const Toolbar = () => {
-    const { colors } = useNCoreTheme();
-    const classes = useStyle({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const classes = useStyle({
+        color: colors 
+    });
     return (
         <div className={classes.container}>
             <div className={classes.aboutContentContainer}>

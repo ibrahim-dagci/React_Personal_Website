@@ -1,13 +1,22 @@
-import { NCoreProvider, useNCoreTheme, useNCoreLocalization } from "ncore-web";
-import themes from "./themes";
-import locales from "./locales";
-import useStyles from "./stylesheets";
 import Navigation from "./navigation";
-import { Header, Toolbar } from "./components";
-import { useEffect } from "react";
+import useStyles from "./stylesheets";
+import locales from "./locales";
+import themes from "./themes";
+import {
+    NCoreProvider, 
+    useNCoreTheme,
+} from "ncore-web";
+import {
+    Header, Toolbar 
+} from "./components";
+
 const App = () => {
-    const { colors } = useNCoreTheme();
-    const classes = useStyles({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const classes = useStyles({
+        color: colors 
+    });
     return (
         <div className={classes.container}>
             <Header />

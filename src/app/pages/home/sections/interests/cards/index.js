@@ -1,2 +1,6 @@
-export { default as SmallCard } from "./small";
-export { default as BigCard } from "./big";
+export {
+    default as SmallCard 
+} from "./small";
+export {
+    default as BigCard 
+} from "./big";

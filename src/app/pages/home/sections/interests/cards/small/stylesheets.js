@@ -1,16 +1,34 @@
-import { createUseStyles } from "react-jss";
-import { clickEvent } from "../../../../../../themes/helpers";
+import {
+    createUseStyles 
+} from "react-jss";
+import {
+    clickEvent 
+} from "../../../../../../themes/helpers";
 
 const useStyles = createUseStyles(
     {
         container: {
-            transition: ({ transition }) => `${transition}`,
-            backgroundColor: ({ color }) => color.bodyrt,
-            transform: ({ transform }) => `${transform}`,
-            position: ({ position }) => `${position}`,
-            right: ({ right }) => `${right}`,
-            left: ({ left }) => `${left}`,
-            scale: ({ scale }) => scale,
+            transition: ({
+                transition 
+            }) => `${transition}`,
+            backgroundColor: ({
+                color 
+            }) => color.bodyrt,
+            transform: ({
+                transform 
+            }) => `${transform}`,
+            position: ({
+                position 
+            }) => `${position}`,
+            right: ({
+                right 
+            }) => `${right}`,
+            left: ({
+                left 
+            }) => `${left}`,
+            scale: ({
+                scale 
+            }) => scale,
             borderRadius: "1.25rem",
             justifyContent: "center",
             alignItems: "center",
@@ -38,7 +56,9 @@ const useStyles = createUseStyles(
             gap: "1.5rem",
             "& h2": {
                 width: "100%",
-                color: ({ color }) => color.primary,
+                color: ({
+                    color 
+                }) => color.primary,
             },
             "& p": {
                 color: "white",
@@ -66,10 +86,14 @@ const useStyles = createUseStyles(
                 height: "10rem",
             },
             "& h2": {
-                color: ({ color }) => color.primary,
+                color: ({
+                    color 
+                }) => color.primary,
             },
         },
     },
-    { name: "Small-Card" }
+    {
+        name: "Small-Card" 
+    }
 );
 export default useStyles;

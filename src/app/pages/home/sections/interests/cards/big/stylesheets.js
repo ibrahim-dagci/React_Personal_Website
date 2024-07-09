@@ -1,13 +1,25 @@
-import { createUseStyles } from "react-jss";
-import { clickEvent } from "../../../../../../themes/helpers";
+import {
+    createUseStyles 
+} from "react-jss";
+import {
+    clickEvent 
+} from "../../../../../../themes/helpers";
 
 const useStyles = createUseStyles(
     {
         container: {
-            transition: ({ transition }) => `${transition}`,
-            transform: ({ transform }) => `${transform}`,
-            position: ({ position }) => `${position}`,
-            scale: ({ scale }) => scale,
+            transition: ({
+                transition 
+            }) => `${transition}`,
+            transform: ({
+                transform 
+            }) => `${transform}`,
+            position: ({
+                position 
+            }) => `${position}`,
+            scale: ({
+                scale 
+            }) => scale,
             perspective: 1000,
             height: "24.1rem",
             width: "18.7rem",
@@ -24,7 +36,9 @@ const useStyles = createUseStyles(
             width: "100%",
         },
         back: {
-            background: ({ color }) => color.bodyrt,
+            background: ({
+                color 
+            }) => color.bodyrt,
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
             justifyContent: "center",
@@ -39,7 +53,9 @@ const useStyles = createUseStyles(
             "& h2": {
                 marginLeft: "1.5rem",
                 width: "100%",
-                color: ({ color }) => color.primary,
+                color: ({
+                    color 
+                }) => color.primary,
             },
             "& p": {
                 marginRight: "0.5rem",
@@ -57,7 +73,9 @@ const useStyles = createUseStyles(
             },
         },
         front: {
-            background: ({ color }) => color.bodyrt,
+            background: ({
+                color 
+            }) => color.bodyrt,
             backfaceVisibility: "hidden",
             justifyContent: "center",
             borderRadius: "1.25rem",
@@ -74,10 +92,14 @@ const useStyles = createUseStyles(
             },
 
             "& h2": {
-                color: ({ color }) => color.primary,
+                color: ({
+                    color 
+                }) => color.primary,
             },
         },
     },
-    { name: "Big-Card" }
+    {
+        name: "Big-Card" 
+    }
 );
 export default useStyles;

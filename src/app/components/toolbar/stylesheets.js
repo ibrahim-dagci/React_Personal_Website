@@ -1,5 +1,9 @@
-import { createUseStyles } from "react-jss";
-import { clickEvent } from "../../themes/helpers";
+import {
+    createUseStyles 
+} from "react-jss";
+import {
+    clickEvent 
+} from "../../themes/helpers";
 
 const useStyle = createUseStyles(
     {
@@ -34,13 +38,17 @@ const useStyle = createUseStyles(
             },
         },
         homeContentContainer: {
-            backgroundColor: ({ color }) => color.toolbargray,
+            backgroundColor: ({
+                color 
+            }) => color.toolbargray,
             height: "100%",
             flex: 1,
             ...clickEvent(),
         },
         aboutContentContainer: {
-            backgroundColor: ({ color }) => color.rightCircle,
+            backgroundColor: ({
+                color 
+            }) => color.rightCircle,
             height: "100%",
             flex: 1,
             borderRadius: "3rem 0 0 3rem",
@@ -48,7 +56,9 @@ const useStyle = createUseStyles(
         },
         contactContentContainer: {
             borderRadius: "0 3rem 3rem 0",
-            backgroundColor: ({ color }) => color.leftCircle,
+            backgroundColor: ({
+                color 
+            }) => color.leftCircle,
             height: "100%",
             flex: 1,
             ...clickEvent(),

@@ -1,8 +1,19 @@
-import { useNCoreLocalization, useNCoreTheme } from "ncore-web";
 import useStyles from "./stylesheets";
-import { SmallCard, BigCard } from "./cards";
-import { CARDS } from "../../../../constants";
-import { useState, useEffect } from "react";
+import {
+    useNCoreLocalization, 
+    useNCoreTheme,
+} from "ncore-web";
+import {
+    SmallCard,
+    BigCard ,
+} from "./cards";
+import {
+    CARDS 
+} from "../../../../constants";
+import {
+    useEffect, 
+    useState, 
+} from "react";
 const cards = CARDS;
 const proxy = new Proxy(cards, {
     get(target, prop) {
@@ -16,9 +27,15 @@ const proxy = new Proxy(cards, {
     },
 });
 const Interests = () => {
-    const { colors } = useNCoreTheme();
-    const { localize } = useNCoreLocalization();
-    const clases = useStyles({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const {
+        localize 
+    } = useNCoreLocalization();
+    const clases = useStyles({
+        color: colors 
+    });
     const [index, setIndex] = useState(0);
     const [transition, setTransition] = useState("all 0.5s");
     const [scaleLeft, setScaleLeft] = useState(0.9);

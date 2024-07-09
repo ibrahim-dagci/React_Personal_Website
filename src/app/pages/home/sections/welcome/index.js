@@ -1,8 +1,15 @@
-import { useNCoreTheme } from "ncore-web";
 import useStyles from "./stylesheets";
+import {
+    useNCoreTheme 
+} from "ncore-web";
+
 const Welcome = () => {
-    const { colors } = useNCoreTheme();
-    const classes = useStyles({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const classes = useStyles({
+        color: colors 
+    });
     return (
         <div className={classes.container}>
             <div className={classes.iMacContainer}>

@@ -1,10 +1,19 @@
-import { useNCoreLocalization, useNCoreTheme } from "ncore-web";
 import useStyles from "./stylesheets";
+import {
+    useNCoreLocalization,
+    useNCoreTheme, 
+} from "ncore-web";
 
 const Resume = () => {
-    const { colors } = useNCoreTheme();
-    const { localize } = useNCoreLocalization();
-    const classes = useStyles({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const {
+        localize 
+    } = useNCoreLocalization();
+    const classes = useStyles({
+        color: colors 
+    });
     return (
         <div className={classes.container}>
             <div className={classes.whoamiContainer}>

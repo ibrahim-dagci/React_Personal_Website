@@ -1,5 +1,8 @@
-import { useEffect, useState } from "react";
 import useStyle from "./stylesheets";
+import {
+    useEffect, 
+    useState, 
+} from "react";
 
 const Switcher = ({
     leftPath = "null",

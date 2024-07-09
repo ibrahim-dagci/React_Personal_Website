@@ -1,19 +1,27 @@
-import { createUseStyles } from "react-jss";
+import {
+    createUseStyles 
+} from "react-jss";
 
 const useStyles = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.body,
+            backgroundColor: ({
+                color 
+            }) => color.body,
             width: "100%",
             "& h1": {
-                backgroundImage: ({ color }) =>
+                backgroundImage: ({
+                    color 
+                }) =>
                     `linear-gradient( to right, ${color.primary},${color.primary},${color.bodyR}, ${color.bodyR} )`,
                 WebkitTextFillColor: "transparent",
                 WebkitBackgroundClip: "text",
                 marginTop: "2rem",
             },
             "& p": {
-                color: ({ color }) => color.bodyR,
+                color: ({
+                    color 
+                }) => color.bodyR,
                 textAlign: "center",
                 lineHeight: "2rem",
                 marginTop: "2rem",
@@ -33,7 +41,9 @@ const useStyles = createUseStyles(
             width: "100%",
             height: "30rem",
             "& h2": {
-                backgroundImage: ({ color }) =>
+                backgroundImage: ({
+                    color 
+                }) =>
                     `linear-gradient( ${color.primary},${color.primary},${color.bodyR}, ${color.bodyR} )`,
                 WebkitTextFillColor: "transparent",
                 WebkitBackgroundClip: "text",
@@ -45,14 +55,18 @@ const useStyles = createUseStyles(
             },
         },
         experience: {
-            backgroundColor: ({ color }) => color.body1,
+            backgroundColor: ({
+                color 
+            }) => color.body1,
             flexDirection: "row",
             display: "flex",
             flex: 1,
             gap: "1rem",
         },
         educations: {
-            backgroundColor: ({ color }) => color.body2,
+            backgroundColor: ({
+                color 
+            }) => color.body2,
             flexDirection: "row",
             display: "flex",
             flex: 1,
@@ -66,8 +80,12 @@ const useStyles = createUseStyles(
             gap: "1rem",
             flex: 1,
             "& span": {
-                backgroundColor: ({ color }) => color.body1,
-                color: ({ color }) => color.bodyR,
+                backgroundColor: ({
+                    color 
+                }) => color.body1,
+                color: ({
+                    color 
+                }) => color.bodyR,
                 justifyContent: "center",
                 flexDirection: "column",
                 borderRadius: "0.3rem",
@@ -81,7 +99,9 @@ const useStyles = createUseStyles(
                 marginLeft: "1rem",
             },
             "& h3": {
-                color: ({ color }) => color.secondery,
+                color: ({
+                    color 
+                }) => color.secondery,
             },
         },
         experienceContent: {
@@ -92,8 +112,12 @@ const useStyles = createUseStyles(
             gap: "1rem",
             flex: 1,
             "& span": {
-                backgroundColor: ({ color }) => color.body2,
-                color: ({ color }) => color.bodyR,
+                backgroundColor: ({
+                    color 
+                }) => color.body2,
+                color: ({
+                    color 
+                }) => color.bodyR,
                 justifyContent: "center",
                 flexDirection: "column",
                 borderRadius: "0.3rem",
@@ -107,7 +131,9 @@ const useStyles = createUseStyles(
                 marginLeft: "1rem",
             },
             "& h3": {
-                color: ({ color }) => color.secondery,
+                color: ({
+                    color 
+                }) => color.secondery,
             },
         },
         vertical: {
@@ -117,6 +143,8 @@ const useStyles = createUseStyles(
             writingMode: "horizontal-tb",
         },
     },
-    { name: "Resume-Section" }
+    {
+        name: "Resume-Section" 
+    }
 );
 export default useStyles;

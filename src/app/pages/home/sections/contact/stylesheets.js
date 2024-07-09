@@ -1,13 +1,19 @@
-import { createUseStyles } from "react-jss";
+import {
+    createUseStyles 
+} from "react-jss";
 
 const useStyles = createUseStyles(
     {
         container: {
-            backgroundColor: ({ color }) => color.body,
+            backgroundColor: ({
+                color 
+            }) => color.body,
             width: "100%",
             height: 500,
         },
     },
-    { name: "Contact" }
+    {
+        name: "Contact" 
+    }
 );
 export default useStyles;

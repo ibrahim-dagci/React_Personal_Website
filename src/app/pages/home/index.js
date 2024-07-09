@@ -1,10 +1,21 @@
-import { useNCoreTheme } from "ncore-web";
-import { Welcome, Resume, Interests, Contact } from "./sections";
 import useStyles from "./stylesheets";
+import {
+    useNCoreTheme 
+} from "ncore-web";
+import {
+    Interests,
+    Welcome,
+    Contact,
+    Resume,
+} from "./sections";
 
 const Home = () => {
-    const { colors } = useNCoreTheme();
-    const classes = useStyles({ color: colors });
+    const {
+        colors 
+    } = useNCoreTheme();
+    const classes = useStyles({
+        color: colors 
+    });
     return (
         <div className={classes.container}>
             <Welcome />
