@@ -12,23 +12,27 @@ const useStyles = createUseStyles(
             height: "100vh",
         },
         iMacContainer: {
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            paddingRight: 10,
-            paddingLeft: 10,
-            paddingTop: 40,
-            height: "75%",
             "@media (max-width: 1050px)": {
                 paddingTop: 60,
             },
+            justifyContent: "center",
+            alignItems: "center",
+            paddingRight: 10,
+            paddingLeft: 10,
+            display: "flex",
+            paddingTop: 50,
+            height: "75%",
+            
         },
         screenContentContainer: {
             justifyContent: "center",
             alignItems: "center",
+            position:"absolute",
+            overflow:"hidden",
             display: "flex",
-            width: "100%",
-            height: "85%",
+            height: "50%",
+            width: "40%",
+            top:10
         },
         sinusContainer: {
             justifyContent: "center",
