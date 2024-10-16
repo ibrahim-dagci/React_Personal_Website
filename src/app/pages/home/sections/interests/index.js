@@ -90,6 +90,9 @@ const Interests = () => {
                             }, 500);
                         } else setIndex(index - 1);
                     }}
+                    style={{
+                        cursor:"pointer"
+                    }}
                 >
                     {"<"}
                 </h1>
@@ -150,6 +153,9 @@ const Interests = () => {
                                 setScaleMid(1.1);
                             }, 500);
                         } else setIndex(index + 1);
+                    }}
+                    style={{
+                        cursor:"pointer"
                     }}
                 >
                     {">"}
