@@ -11,7 +11,7 @@ const useStyles = createUseStyles(
             width: "100%",
             height: "100vh",
         },
-        iMacContainer: {
+        welcomeContainer: {
             "@media (max-width: 1050px)": {
                 paddingTop: 60,
             },
@@ -24,6 +24,26 @@ const useStyles = createUseStyles(
             height: "75%",
             
         },
+        desktop:{
+            "@media (max-width: 820px)": {
+                display:"none"
+            },
+        },
+        tab:{
+            display :"none",
+            "@media (max-width: 820px)": {
+                display:"block"
+            },
+            "@media (max-width: 510px)": {
+                display:"none"
+            }
+        },
+        phone:{
+            display:"none",
+            "@media (max-width: 510px)": {
+                display:"block"
+            },
+        },
         screenContentContainer: {
             justifyContent: "center",
             alignItems: "center",
@@ -32,7 +52,7 @@ const useStyles = createUseStyles(
             display: "flex",
             height: "50%",
             width: "40%",
-            top:10
+            top:"8%"
         },
         sinusContainer: {
             justifyContent: "center",

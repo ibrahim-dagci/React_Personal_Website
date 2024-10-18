@@ -33,20 +33,19 @@ const colors = {
     leftContainer: "#C86060",
     toolbargray: "#D9D9D9",
     rightCircle: "#31C9D4",
-    imacscreen: "#000000",
-    imacborder: "#FFFFFF",
     leftCircle: "#FF0000",
     orangered: "#ff8c00",
     secondery: "#ff8c00",
     primary: "#B695C0",
-    imacpot: "#EEEDED",
     rgb1: "rgb(0,0,0)",
     message: "#cfcfcf",
     screen: "#000000",
+    border: "#FFFFFF",
     bodyR: "#FFFFFF",
     body2: "#333333",
     body1: "#222222",
     body: "#111111",
+    pot: "#EEEDED",
 };
 
 export default {
