@@ -9,7 +9,6 @@ const useStyles = createUseStyles(
                 color 
             }) => color.body,
             width: "100%",
-            height: 800,
         },
         header: {
             display: "flex",
@@ -31,13 +30,12 @@ const useStyles = createUseStyles(
             alignItems: "center",
             marginTop: "3rem",
             display: "flex",
+            gap:"1rem",
             "& h1": {
                 color: ({
                     color 
                 }) => color.bodyR,
                 fontSize: "3rem",
-            },
-            "@media (max-width: 1150px)": {
             },
             "@media (max-width: 1100px)": {
                 gap: "5rem",
@@ -46,7 +44,7 @@ const useStyles = createUseStyles(
                 gap: "3rem",
             },
             "@media (max-width: 510px)": {
-                gap: "2rem",
+                gap: "0rem",
             },
         },
         cardContainer: {

@@ -15,6 +15,11 @@
         "interests": "My Current Interests",
         "mobile": "On native platforms, I have significant experience working with Swift, and I continue to work with it. While I haven't focused heavily on the Android side, I also have experience with Kotlin. In the cross-platform space, I am learning React Native. I am not a professional, but I am eager to learn.",
         "web": "I have the expertise to convert UI/UX designs of static websites into code, and I can design personal and corporate websites. I am well-versed in adopting new architectures and am currently using new technologies and libraries, including React.",
-        "ai": "AI was a field that I was very curious about. If fate allows, I will be taking a course in artificial intelligence and image processing this year. I have no doubt that great things will emerge as a result."
+        "ai": "AI was a field that I was very curious about. If fate allows, I will be taking a course in artificial intelligence and image processing this year. I have no doubt that great things will emerge as a result.",
+        "contact":"Contact",
+        "contactNameAndSurname": "Please Enter Your Name and Surname",
+        "contactSubject": "Please Enter Your Subject of Message",
+        "contactMessage": "Please Enter Your Message",
+        "send": "Send"
     }
 }

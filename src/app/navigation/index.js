@@ -8,8 +8,8 @@ import {
 const Navigation = () => {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/more" element={<More></More>} />
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/more" element={<More/>} />
         </Routes>
     );
 };

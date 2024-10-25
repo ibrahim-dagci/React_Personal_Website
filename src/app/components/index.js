@@ -10,3 +10,9 @@ export {
 export {
     default as Switcher 
 } from "./switcher";
+export {
+    default as TextInput 
+} from "./input";
+export {
+    default as TextArea 
+} from "./textArea";

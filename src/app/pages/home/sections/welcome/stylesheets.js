@@ -52,7 +52,7 @@ const useStyles = createUseStyles(
             display: "flex",
             height: "50%",
             width: "40%",
-            top:"8%"
+            top:"7%"
         },
         sinusContainer: {
             justifyContent: "center",
