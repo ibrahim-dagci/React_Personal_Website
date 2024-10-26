@@ -20,6 +20,7 @@
         "contactNameAndSurname": "Please Enter Your Name and Surname",
         "contactSubject": "Please Enter Your Subject of Message",
         "contactMessage": "Please Enter Your Message",
-        "send": "Send"
+        "send": "Send",
+        "footer": "Copyrigh © 2024 İbrahim Dağcı"
     }
 }

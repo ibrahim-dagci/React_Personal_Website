@@ -20,6 +20,8 @@
         "contactNameAndSurname": "Lütfen Tam Adınızı Giriniz",
         "contactSubject": "Lütfen Mesajınızın Konusunu Giriniz",
         "contactMessage": "Lütfen Mesajınızı Giriniz",
-        "send": "Gönder"
+        "send": "Gönder",
+        "footer": "Telif Hakkı © 2024 İbrahim Dağcı"
+
     }
 }

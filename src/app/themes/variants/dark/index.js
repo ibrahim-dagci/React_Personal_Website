@@ -44,6 +44,7 @@ const colors = {
     bodyR: "#FFFFFF",
     body2: "#333333",
     body1: "#222222",
+    footer:"#FF0000",
     body: "#111111",
     pot: "#EEEDED",
 };

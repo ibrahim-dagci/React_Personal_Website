@@ -43,6 +43,7 @@ const colors = {
     bodyR: "#000000",
     body2: "#CCCCCC",
     body1: "#DDDDDD",
+    footer:"#31C9D4",
     body: "#EEEEEE",
     message: "gray",
     pot: "#292929",
