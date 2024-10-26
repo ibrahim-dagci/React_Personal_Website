@@ -7,6 +7,7 @@ import {
     useNCoreTheme,
 } from "ncore-web";
 import {
+    Footer,
     Header, Toolbar 
 } from "./components";
 
@@ -22,6 +23,7 @@ const App = () => {
             <Header />
             <Navigation />
             <Toolbar />
+            <Footer/>
         </div>
     );
 };

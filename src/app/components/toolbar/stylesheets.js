@@ -8,6 +8,7 @@ import {
 const useStyle = createUseStyles(
     {
         container: {
+            transform: "translateX(-50%)",
             justifyContent: "center",
             alignItems: "center",
             borderRadius: "3rem",
@@ -18,6 +19,7 @@ const useStyle = createUseStyles(
             height: "6rem",
             width: "18rem",
             bottom: "1rem",
+            left: "50%",
             "&:hover": {
                 cursor: "pointer",
                 opacity: 1,

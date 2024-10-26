@@ -48,8 +48,6 @@ const useStyles = createUseStyles(
         },
         container: {
             fontFamily: "inter-semibold",
-            justifyContent: "center",
-            display: "flex",
             height: "100%",
             width: "100%",
         },
