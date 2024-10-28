@@ -8,7 +8,7 @@ const useStyle = createUseStyles(
             justifyContent:"space-between",
             backgroundColor: ({
                 color
-            }) => color.footer,
+            }) => color.primary,
             fontSize:"0.8rem",
             padding:"0.9rem",
             display:"flex",

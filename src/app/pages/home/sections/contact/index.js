@@ -11,6 +11,11 @@ import {
 import {
     useState 
 } from "react";
+import {
+    InstagramIcon, 
+    LinkedinIcon,
+    GithubIcon, 
+} from "../../../../assets/icon/svg";
 
 const Contact = () => {
     const [nameSurname,setNameSurname] = useState();
@@ -37,35 +42,69 @@ const Contact = () => {
                 src="./assets/images/myself.jpeg"
                 className={classes.img}
             />
-            <div className={classes.formContainer}>
-                <TextInput 
-                    placeholder={localize("contactNameAndSurname")} 
-                    className={classes.input}
-                    onChangeText={(text)=>{
-                        setNameSurname(text);
-                    }}
-                />
-                <TextInput 
-                    placeholder={localize("contactSubject")}
-                    className={classes.input}
-                    onChangeText={(text)=>{
-                        setSubject(text);
-                    
-                    }}
-                />
-                <TextArea 
-                    placeholder={localize("contactMessage")}
-                    className={classes.input}
-                    onChangeText={(text)=>{
-                        setMessage(text);
-                    }}
-                />
-                <div className={classes.buttonContainer}>
-                    <Button 
-                        spreadBehaviour="strech"
-                        title={localize("send")} 
-                        variant="outline"
+            <div className={classes.contactContainer}>
+                <div className={classes.formContainer}>
+                    <TextInput 
+                        placeholder={localize("contactNameAndSurname")} 
+                        className={classes.input}
+                        onChangeText={(text)=>{
+                            setNameSurname(text);
+                        }}
                     />
+                    <TextInput 
+                        placeholder={localize("contactSubject")}
+                        className={classes.input}
+                        onChangeText={(text)=>{
+                            setSubject(text);
+                    
+                        }}
+                    />
+                    <TextArea 
+                        placeholder={localize("contactMessage")}
+                        className={classes.input}
+                        onChangeText={(text)=>{
+                            setMessage(text);
+                        }}
+                    />
+                    <div className={classes.buttonContainer}>
+                        <Button 
+                            spreadBehaviour="strech"
+                            title={localize("send")} 
+                            variant="outline"
+                        />
+                    </div>
+                    <div className={classes.socialMediaContainer}>
+                        <a 
+                            href="https://github.com/ibrahim-dagci" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <GithubIcon 
+                                size={35}
+                                color={colors.primary}
+                            />
+                        </a>
+                        <a 
+                            href="https://www.linkedin.com/in/ibrahim-dagci"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <LinkedinIcon
+                                size={35}
+                                color={colors.primary}
+                            />
+                        </a>
+                        <a 
+                            href="https://www.instagram.com/ibrahim.dgci/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramIcon
+                                size={35}
+                                color={colors.primary}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

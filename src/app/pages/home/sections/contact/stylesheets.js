@@ -1,6 +1,9 @@
 import {
     createUseStyles 
 } from "react-jss";
+import {
+    clickEvent 
+} from "../../../../themes/helpers";
 
 const useStyles = createUseStyles(
     {
@@ -49,26 +52,42 @@ const useStyles = createUseStyles(
             height:"25rem",
             width:"25rem",
         },
-        formContainer:{
+        contactContainer:{
             flexDirection:"column",
             display:"flex",
             padding:"1rem",
-            gap:"1rem",
             flex:1,
             "@media (max-width: 950px)": {
                 width:"80%",
             },
             "@media (max-width: 550px)": {
                 width:"100%",
-                gap:"1rem"
             }
+        },
+        formContainer:{
+            flexDirection:"column",
+            display:"flex",
+            gap:"1rem",
+            flex:1,
         },
         buttonContainer:{
             flexDirection:"column",
             alignItems:"center",
             display:"flex",
             width:"100%"
-        }
+        },
+        socialMediaContainer:{
+            display:"flex",
+            padding:"1rem",
+            justifyContent:"flex-end",
+            gap:"2rem",
+            "& a":{
+                ...clickEvent()
+            },
+            "@media (max-width: 500px)": {
+                WebkitJustifyContent:"space-evenly",
+            }
+        },
     },
     {
         name: "Contact"
