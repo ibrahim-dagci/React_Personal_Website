@@ -79,7 +79,7 @@ const useStyles = createUseStyles(
         socialMediaContainer:{
             display:"flex",
             padding:"1rem",
-            justifyContent:"flex-end",
+            justifyContent:"flex-start",
             gap:"2rem",
             "& a":{
                 ...clickEvent()

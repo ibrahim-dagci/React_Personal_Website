@@ -8,8 +8,9 @@ const useStyles = createUseStyles(
             backgroundColor: ({
                 color 
             }) => color.body,
-            width: "100%",
             height: "100vh",
+            minHeight:700,
+            width: "100%",
         },
         welcomeContainer: {
             "@media (max-width: 1050px)": {
@@ -52,7 +53,19 @@ const useStyles = createUseStyles(
             display: "flex",
             height: "50%",
             width: "40%",
-            top:"7%"
+            top:"7%",
+            "@media (max-height: 500px)": {
+                height:"70%",
+                top:"8%"
+            },
+            "@media (max-height: 450px)": {
+                height:"80%",
+                top:"9%"
+            },
+            "@media (max-height: 350px)": {
+                height:"100%",
+                top:"10%"
+            },
         },
         sinusContainer: {
             justifyContent: "center",
