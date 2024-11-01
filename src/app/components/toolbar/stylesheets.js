@@ -10,6 +10,7 @@ const useStyle = createUseStyles(
         container: {
             transform: "translateX(-50%)",
             justifyContent: "center",
+            transition: 'transform 0.3s ease',
             alignItems: "center",
             borderRadius: "3rem",
             flexDirection: "row",
@@ -64,6 +65,10 @@ const useStyle = createUseStyles(
             height: "100%",
             flex: 1,
             ...clickEvent(),
+        },
+        toolbarHidden: {
+            transform: 'translateY(200%) translateX(-50%)',
+            overflow: 'hidden',
         },
     },
     {
